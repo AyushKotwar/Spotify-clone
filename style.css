@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+body{
+    background-color: rgb(214, 249, 227);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.brand img{
+    width: 44px;
+    padding: 0px 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+nav{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    background-color: black;
+    list-style-type: none; /*  to remove the dots */
+    height: 65px;
+    color: white;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 0px 8px;
+}
+
+.container{
+    min-height: 62vh; /* min height to make the bottom playbar to go down, vh= 62% of height*/
+    background-color: black;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 20px;
+    background-image: url('bg.jpg');
+    background-size: 100%;
+}
+
+.bottom{
+    position: sticky; /* when we scrool this would tick it its position */
+    height: 125px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /*Use the align-items property to align the items vertically.*/
+    align-items: center;
+    flex-direction: column; /*to bring the play bar and the play icons in vertical direction*/
+}
+
+
+.icons{
+    margin: 15px 0px;
+}
+
+.icons i{
+    cursor: pointer; /*when the mouse will come on the play,forward,backward button it will change its style*/
+}
+
+.fa-3x{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 45%;
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.songItem img{
+    width: 45px;
+    margin: 0px 23px;
+    border-radius: 30px;
+}
+
+.songItemContainer{
+    margin-top: 50px;
+}
+
+.timeStamp{
+    margin: 0px 23px;
+}
+
+.timeStamp i{
+    cursor: pointer;
+}
+
+.sonfInfo{
+    position: absolute;
+    left: 5vw;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+}
+
+.sonfInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+#myProgressBar{
+    width: 90vw;
+    cursor: pointer;
+}
